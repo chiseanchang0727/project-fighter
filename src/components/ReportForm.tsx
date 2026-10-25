@@ -115,7 +115,7 @@ const styles = (t: Theme) => StyleSheet.create({
   valueInput: { width: 120, textAlign: "right" },
   multiline: { minHeight: 80, textAlignVertical: "top" },
   primary: { marginTop: 20, backgroundColor: t.accent, borderRadius: 12, paddingVertical: 14, alignItems: "center" },
-  primaryText: { color: "#fff", fontWeight: "700", fontSize: 16 },
+  primaryText: { color: t.onAccent, fontWeight: "700", fontSize: 16 },
   danger: { marginTop: 12, paddingVertical: 14, alignItems: "center" },
   dangerText: { color: t.accent, fontWeight: "600" },
 });

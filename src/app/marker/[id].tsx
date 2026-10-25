@@ -70,7 +70,7 @@ export default function MarkerScreen() {
       {editing ? <>
         <ExplanationFields value={draft} onChange={setDraft} theme={t} disabled={saving} language={language} />
         <Pressable accessibilityRole="button" disabled={saving} onPress={() => { void save(); }} style={[button, { backgroundColor: t.accent }]}>
-          <Text style={{ color: "#fff", fontWeight: "700" }}>{saving ? (zh ? "儲存中…" : "Saving…") : (zh ? "儲存說明" : "Save explanations")}</Text>
+          <Text style={{ color: t.onAccent, fontWeight: "700" }}>{saving ? (zh ? "儲存中…" : "Saving…") : (zh ? "儲存說明" : "Save explanations")}</Text>
         </Pressable>
         <Pressable accessibilityRole="button" disabled={saving} onPress={() => { setDraft(marker.explanation ?? EMPTY_EXPLANATION); setEditing(false); }} style={button}>
           <Text style={{ color: t.muted }}>{zh ? "取消" : "Cancel"}</Text>

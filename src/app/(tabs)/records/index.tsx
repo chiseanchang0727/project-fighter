@@ -70,7 +70,7 @@ function ReportCard({ report, theme, markers }: { report: Report; theme: Theme; 
 
 const styles = (t: Theme) => StyleSheet.create({
   add: { margin: 16, backgroundColor: t.accent, borderRadius: 12, paddingVertical: 12, alignItems: "center" },
-  addText: { color: "#fff", fontWeight: "700", fontSize: 16 },
+  addText: { color: t.onAccent, fontWeight: "700", fontSize: 16 },
   empty: { color: t.muted, textAlign: "center", marginTop: 48 },
   error: { color: t.accent, margin: 16 },
   card: { backgroundColor: t.card, borderRadius: 14, borderWidth: 1, borderColor: t.border, padding: 14, gap: 6 },

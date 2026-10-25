@@ -54,7 +54,7 @@ export function AddMarkerForm({ theme: t, onAdded, onCancel }: {
       ))}
       <Text style={{ color: t.muted }}>新增後請儲存範本以套用。Save the template after adding the marker.</Text>
       <Pressable accessibilityRole="button" disabled={saving} onPress={() => { void add(); }} style={[s.button, { backgroundColor: t.accent, opacity: saving ? 0.6 : 1 }]}>
-        <Text style={{ color: "#fff", fontWeight: "700" }}>{saving ? "新增中 Adding…" : "新增指標 Add marker"}</Text>
+        <Text style={{ color: t.onAccent, fontWeight: "700" }}>{saving ? "新增中 Adding…" : "新增指標 Add marker"}</Text>
       </Pressable>
       <Pressable accessibilityRole="button" disabled={saving} onPress={onCancel} style={s.button}>
         <Text style={{ color: t.muted }}>取消 Cancel</Text>

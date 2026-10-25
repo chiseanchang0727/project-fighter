@@ -76,7 +76,7 @@ export default function TemplateScreen() {
       {ids.length === 0 && <Text style={{ color: t.accent }}>請至少選擇一項指標 Select at least one marker.</Text>}
       <Pressable accessibilityRole="button" disabled={saving || adding || ids.length === 0} onPress={save}
         style={({ pressed }) => [s.save, { backgroundColor: t.accent, opacity: saving || ids.length === 0 || pressed ? 0.6 : 1 }]}>
-        <Text style={{ color: "#fff", fontSize: 16, fontWeight: "700" }}>{saving ? "儲存中 Saving…" : "儲存範本 Save template"}</Text>
+        <Text style={{ color: t.onAccent, fontSize: 16, fontWeight: "700" }}>{saving ? "儲存中 Saving…" : "儲存範本 Save template"}</Text>
       </Pressable>
     </ScrollView>
     </KeyboardAvoidingView>

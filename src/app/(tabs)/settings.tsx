@@ -2,7 +2,7 @@ import * as DocumentPicker from "expo-document-picker";
 import { File, Paths } from "expo-file-system";
 import * as Sharing from "expo-sharing";
 import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
-import { DEFAULT_PROFILE } from "../../domain/profile";
+import { CURRENT_PROFILE } from "../../domain/profile";
 import { parseBackup, parseCustomMarkers, parseMarkerExplanations } from "../../domain/validate";
 import { useRepo } from "../../storage/hooks";
 import { useTheme, type Theme } from "../../theme";
@@ -51,8 +51,8 @@ export default function SettingsScreen() {
     <ScrollView contentContainerStyle={s.container}>
       <Text style={s.section}>個人檔案 Profile</Text>
       <View style={[s.button, { gap: 8 }]}>
-        <Text style={{ color: t.fg, fontSize: 24, fontWeight: "700" }}>{DEFAULT_PROFILE.name}</Text>
-        <Text style={s.noteText}>姓名 Name · {DEFAULT_PROFILE.name}</Text>
+        <Text style={{ color: t.fg, fontSize: 24, fontWeight: "700" }}>{CURRENT_PROFILE.name}</Text>
+        <Text style={s.noteText}>姓名 Name · {CURRENT_PROFILE.name}</Text>
         <Text style={s.noteText}>更多個人資料將於之後加入。More profile details will be added later.</Text>
       </View>
       <Text style={s.section}>資料 Data</Text>

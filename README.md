@@ -19,10 +19,14 @@ Expo Go does not include every native module this app uses, so for a full test b
 
 ## Architecture
 
-The app opens on Home, with Add Record and a combined Records & Trends button.
-That button and the matching tab button open a small chooser for the record list
-or trend charts. Debbie’s profile is in Settings; profile defaults live in
+The app opens on Home, with Add Record and separate Records and Trends shortcuts
+that open each page directly. The combined Records & Trends tab button opens a
+small chooser for those pages. Debbie’s profile is in Settings; profile defaults live in
 `src/domain/profile.ts`.
+
+`CURRENT_PROFILE` is shared by Home and Settings. Encouragements are selected by
+profile ID in `src/domain/encouragement.ts`: Debbie has personal messages with
+sender credits; other users fall back to the original 30 shared messages.
 
 The Template tab selects which lab markers appear on new records. Use Add marker
 to create a custom marker with a name, abbreviation, unit, and optional reference

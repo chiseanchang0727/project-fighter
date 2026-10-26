@@ -46,6 +46,9 @@ const USER_ENCOURAGEMENTS: Readonly<Record<string, readonly Encouragement[]>> = 
   }, {
     text: "Debbie加油！我們會一起陪妳康復",
     from: "Sam",
+  }, {
+    text: "趕快好起來我們一起上山下海到處玩～",
+    from: "Sean",
   }],
 };
 

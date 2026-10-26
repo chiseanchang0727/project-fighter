@@ -43,6 +43,9 @@ const USER_ENCOURAGEMENTS: Readonly<Record<string, readonly Encouragement[]>> = 
   debbie: [{
     text: "Hi Debbie 從接收到確診到開始治療，是段很不容易的一段路，雖然無法一起分擔疼痛，但我會為你加油～\n\n當你感到疼痛沮喪時，請相信你的身體，她是強而有力的，一切會越來越好！加油！",
     from: "Annzo",
+  }, {
+    text: "Debbie加油！我們會一起陪妳康復",
+    from: "Sam",
   }],
 };
 

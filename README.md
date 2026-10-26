@@ -14,6 +14,11 @@ npm run lint
 npm run doctor
 ```
 
+Run `./start.sh` to launch Expo Go development from any working directory. It
+uses port 8082 by default. Use `EXPO_PORT=8083 ./start.sh` to choose another port,
+or `./start.sh --clear` to reset Metro's cache. Keep the terminal open and scan
+the QR code with Expo Go. Install dependencies with `npm ci` first if needed.
+
 Expo Go does not include every native module this app uses, so for a full test build run
 `eas build --profile development` (see below).
 
